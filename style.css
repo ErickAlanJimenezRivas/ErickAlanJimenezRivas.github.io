@@ -17,6 +17,10 @@ body {
     margin: 0;
 }
 
+
+.inactive{
+    display: none;
+}
 /*************** pasword *********************/
 .login{
     width: 100%;
@@ -270,6 +274,10 @@ body {
   /*************** menu desktop *********************/
 
 .desktop-menu{
+    position: absolute;
+    background-color: var(--white);
+    top: 61px;
+    right: 60px;
     width: 100px;
     height: auto;
     border: 1px solid var(--very-light-pink);
@@ -519,6 +527,7 @@ nav{
 }
 
 .navbar-email{
+    cursor: pointer;
     color: var(--very-light-pink);
     font-size: var(--sm);
     margin-right: 14px;
