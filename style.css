@@ -433,12 +433,15 @@ body {
     color: var(--very-light-pink);
 }
 
+/*************** shopping cart *********************/
+
 .shopping-cart{
     display: grid;
     grid-template-columns: auto 1fr auto auto;
     gap: 16px;
     margin-bottom: 24px;
     align-items: center;
+    padding: 0 24px;
 }
 
 .shopping-cart figure {
@@ -658,9 +661,9 @@ nav{
 }
 
 /*************** shoppingCart Total *********************/
-.shoppingCart{
+/*.shoppingCart{
     margin: 12px 24px 0 24px;
-}
+}*/
 .title-container {
     display: flex;
     border-bottom: 1px solid var(--hospital-green);
@@ -686,6 +689,5 @@ nav{
     .shoppingCart{
         box-sizing: border-box;
         margin: 0;
-        padding: 20px;
     }
 }
