@@ -11,7 +11,7 @@
 }
 
 body {
-    background: rgba(138, 52, 52, 0.74);
+    background: rgba(82, 113, 97, 0.74);
     font-family: 'Quicksand', sans-serif;
 
     margin: 0;
@@ -317,9 +317,16 @@ body {
     display: inline-block;
 }
 
+@media (max-width: 640px){
+    .desktop-menu{
+        display: none;
+    }
+}
 /*************** menu mobile *********************/
 
 .mobile-menu{
+    position: absolute;
+    top: 60px;
     padding: 24px;
 }
 
@@ -329,12 +336,17 @@ body {
     font-weight: bold;
 }
 
+.mobile-menu ul li a:hover,
+.mobile-menu ul li a:hover{
+    color: var(--hospital-green);
+    
+}
+
 .mobile-menu ul:nth-child(1) {
     border-bottom: 1px solid var(--very-light-pink);
   }
   
   .mobile-menu ul:last-child {
-  position: absolute;
   bottom: 0;
 }
 
@@ -357,6 +369,12 @@ body {
   .mobile-menu .sign-out {
     font-size: var(--sm);
     color: var(--hospital-green);
+}
+
+@media (min-width: 640px){
+    .mobile-menu{
+        display: none;
+    }
 }
 
 /*************** my order *********************/
