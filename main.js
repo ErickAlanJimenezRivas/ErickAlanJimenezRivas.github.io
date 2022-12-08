@@ -6,29 +6,41 @@ const menuCarritoIcon = document.querySelector('.navbar-shoping-cart');
 const productoCarrito = document.querySelector('.shoppingCart');
 const cardsContainer = document.querySelector('.cards-container');
 const productDetailContainer = document.querySelector('.product-detail-info')
+const productDetailCloseBtn = document.querySelector('.product-detail-close');
 
 menuCarritoIcon.addEventListener('click', togglecarritoCompras);
 navEmail.addEventListener('click', toggleDesktopMenu);
 burguerMenu.addEventListener('click', toggleBurguerMenu);
+productDetailCloseBtn.addEventListener('click', closeProductDetailAside);
 
 function toggleDesktopMenu(){
     desktopMenu.classList.toggle('inactive');
     productoCarrito.classList.add('inactive');
+    productDetailContainer.classList.add('inactive');
 }
 
 function toggleBurguerMenu(){
     productoCarrito.classList.add('inactive');
     mobileMenu.classList.toggle('inactive');
+    productDetailContainer.classList.add('inactive');
 }
 
 function togglecarritoCompras(){
     mobileMenu.classList.add('inactive');
     productoCarrito.classList.toggle('inactive');
     desktopMenu.classList.add('inactive');
+    productDetailContainer.classList.add('inactive');
 }
 
 function openProductDetailAside(){
     productDetailContainer.classList.remove('inactive');
+}
+
+function closeProductDetailAside(){
+    productDetailContainer.classList.add('inactive');
+    desktopMenu.classList.add('inactive');
+    mobileMenu.classList.add('inactive');
+    productoCarrito.classList.add('inactive');
 }
 
 const productList = [];

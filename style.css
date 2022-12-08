@@ -21,6 +21,12 @@ body {
 .inactive{
     display: none;
 }
+.darken{
+    width: 100%;
+	height: 100%;
+	position: absolute;
+	background-color: rgba(0, 0, 0, 0.5);
+}
 /*************** pasword *********************/
 .login{
     width: 100%;
@@ -627,7 +633,7 @@ nav{
 
 .product-detail-close:hover{
     cursor: pointer;
-    background-color: var(--hospital-green);
+    background-color: rgb(123, 75, 113);
 }
 
 .product-detail-info > img:nth-child(2){
@@ -664,6 +670,7 @@ nav{
 @media (max-width: 640px){
     .product-detail, .product-detail-info{
         width: 100%;
+        margin-right: 0;
     }
 }
 
