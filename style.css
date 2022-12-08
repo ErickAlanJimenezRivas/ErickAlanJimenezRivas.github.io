@@ -329,6 +329,9 @@ body {
     position: absolute;
     top: 60px;
     padding: 24px;
+    left: 0;
+    width: 100%;
+    background-color: rgb(82, 113, 97);
 }
 
 .mobile-menu a{
@@ -600,12 +603,12 @@ nav{
     background: #69a769;
 }
 
-.product-detail{
+.product-detail, .product-detail-info{
     width: 360px;
     padding-bottom: 24px;
     position: absolute;
     right: 0;
-    background-color: #3b6e3bd4;
+    background-color: rgb(82, 113, 97);
     border-radius: 3%;
     margin-right: 12px;
 }
@@ -627,7 +630,7 @@ nav{
     background-color: var(--hospital-green);
 }
 
-.product-detail > img:nth-child(2){
+.product-detail-info > img:nth-child(2){
     width: 100%;
     height: 360px;
     object-fit: cover;
@@ -659,7 +662,7 @@ nav{
     margin-bottom: 36px;
 }
 @media (max-width: 640px){
-    .product-detail{
+    .product-detail, .product-detail-info{
         width: 100%;
     }
 }
